@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: pink; 
+    color: black; 
+    line-height: 1.6; 
+}
+
+header {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    background-color: rgb(0, 178, 249); 
+    padding: 10px 20px; 
+    color: white; 
+    border-bottom: 4px solid rgb(0, 178, 249); 
+}
+
+#titulo {
+    display: flex; 
+    align-items: center; 
+}
+
+#logo {
+    height: 80px; 
+    margin-right: 10px; 
+}
+
+h1 {
+    font-size: 1.5rem; 
+    letter-spacing: 1px; 
+}
+
+#eslogan {
+    font-size: 1rem; 
+    font-style: italic; 
+    color: white; 
+    letter-spacing: 0.5px; 
+}
+
+nav ul {
+    display: flex; 
+    list-style: none; 
+}
+
+nav ul li {
+    margin-left: 20px; 
+}
+
+nav ul li a {
+    text-decoration: none; 
+    color: white; 
+    padding: 10px; 
+    transition: background-color 0.3s ease; 
+}
+
+nav ul li a:hover {
+    background-color: rgb(255, 182, 193); 
+    border-radius: 5px; 
+}
+
+.carousel-inner {
+    max-height: 600px;
+}
+
+.carousel-item {
+    transition: transform 0.3s ease; 
+}
+
+
+.carousel img {
+    object-fit: cover; 
+    height: 600px; 
+}
+
+.destinos, .reservaciones, .blog, .servicios, .chiapas {
+    background-color: rgba(0, 178, 249, 0.8); 
+    color: white; 
+    padding: 20px; 
+    margin: 20px; 
+    border-radius: 8px; 
+    text-align: center; 
+}
+
+.destinos h2, .reserva h2, .blog h2, .servicios h2, .chiapas h2 {
+    font-size: 2rem; 
+    margin-bottom: 10px; 
+}
+
+.imagen-seccion {
+    height: 600px; 
+    background-size: cover; 
+    background-position: center; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    color: white; 
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7); 
+    padding: 20px; 
+}
+
+.imagen-seccion h2 {
+    font-size: 2.5rem; 
+    margin: 0; 
+    text-align: center; 
+}
+
+.imagen-seccion p {
+    font-size: 1.2rem; 
+    max-width: 600px; 
+    text-align: center; 
+    margin-top: 10px; 
+}
+
+.boton {
+    display: inline-block; 
+    padding: 10px 20px; 
+    margin-top: 20px; 
+    background-color: rgba(0, 178, 249, 0.9); 
+    color: white; 
+    text-decoration: none; 
+    border-radius: 5px; 
+    transition: background-color 0.3s ease; 
+}
+
+.boton:hover {
+    background-color: rgba(255, 182, 193, 0.9);
+}
+
+
+.contenido {
+    text-align: center; 
+    z-index: 1; 
+}
+
+footer {
+    background-color: steelblue; 
+    color: white; 
+    padding: 40px 0; 
+    text-align: center;
+}
+
+.footer-container {
+    display: flex; 
+    justify-content: space-between; 
+    flex-wrap: wrap; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+.logo-text-section {
+    display: flex;
+    align-items: center;
+}
+
+#footer-logo {
+    height: 80px; 
+    margin-right: 20px; 
+}
+
+.footer-text h4 {
+    font-size: 2rem; 
+    margin: 0; 
+}
+
+.footer-text p {
+    font-size: 1rem; 
+    margin: 0;
+    max-width: 300px; 
+}
+
+.footer-links, .footer-contact {
+    text-align: left; 
+    margin-top: 20px;
+}
+
+.footer-links h4, .footer-contact h4 {
+    font-size: 1.5rem; 
+    margin-bottom: 10px;
+}
+
+.footer-links ul {
+    list-style: none; 
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 5px;
+}
+
+.footer-links ul li a {
+    color: white; 
+    text-decoration: none; 
+    transition: color 0.3s ease;
+}
+.footer-contact p {
+    margin: 5px 0; 
+}
+
+.footer-bottom {
+    background-color: rgb(0, 120, 180); 
+    padding: 10px 0;
+    text-align: center;
+    color: white;
+    margin-top: 20px; 
+}
+
+.footer-bottom p {
+    margin: 0; 
+}
+.main-destino {
+    background-image: url('https://megustavolar.iberia.com/wp-content/uploads/mgv/San_Cristobal_Casas_Chiapas_Mexico_ferrantraite_Istock.jpg');
+    background-size: cover; /* Cubre todo el contenedor */
+    background-position: center; /* Centra la imagen */
+    height: 100vh; /* Altura total de la ventana del navegador */
+    padding: 40px; /* Espaciado interno */
+    margin: 0; /* Sin espaciado externo */
+    border-radius: 0; /* Sin bordes redondeados para que ocupe todo */
+    box-shadow: none; /* Sin sombra */
+    color: white; /* Color del texto dentro del contenedor */
+}
+
+.main-destino h2, .main-destino p {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo negro semi-transparente para legibilidad */
+    padding: 10px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+}
